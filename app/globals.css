@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* @custom-variant is a Tailwind CSS v4 feature */
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #fcf7f5;
+  --foreground: #3b2420;
+  --card: #ffffff;
+  --card-foreground: #3b2420;
+  --popover: #ffffff;
+  --popover-foreground: #3b2420;
+  --primary: #1f6f50;
+  --primary-foreground: #fcf7f5;
+  --secondary: #d4a89a;
+  --secondary-foreground: #ffffff;
+  --muted: #e8dad4;
+  --muted-foreground: #4a3a35;
+  --accent: #d4a89a;
+  --accent-foreground: #ffffff;
+  --chocolate: #3b2420;
+  --chocolate-foreground: #fcf7f5;
+  --destructive: #b42318;
+  --destructive-foreground: #fcf7f5;
+  --border: #d4a89a;
+  --input: #ffffff;
+  --ring: #1f6f50;
+  --radius: 1rem;
+}
+
+/* @theme is a Tailwind CSS v4 feature for inline theme configuration */
+@theme inline {
+  --font-sans: 'DM Sans', 'DM Sans Fallback';
+  --font-serif: 'Fraunces', 'Fraunces Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-chocolate: var(--chocolate);
+  --color-chocolate-foreground: var(--chocolate-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* @apply is a Tailwind CSS directive for applying utility classes in CSS rules */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .label-perforation {
+    background-image: radial-gradient(circle, var(--background) 4px, transparent 4.5px);
+    background-size: 16px 12px;
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: reveal 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

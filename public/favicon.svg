@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Cake base -->
+  <rect x="20" y="50" width="60" height="35" rx="4" fill="#d4a89a" stroke="#1f6f50" stroke-width="2"/>
+  
+  <!-- Cake layers -->
+  <rect x="20" y="40" width="60" height="12" rx="2" fill="#8B4513" stroke="#1f6f50" stroke-width="1.5"/>
+  <rect x="20" y="30" width="60" height="12" rx="2" fill="#A0522D" stroke="#1f6f50" stroke-width="1.5"/>
+  
+  <!-- Frosting/Cream -->
+  <ellipse cx="50" cy="28" rx="32" ry="8" fill="#f2d3cc" stroke="#1f6f50" stroke-width="1.5"/>
+  
+  <!-- Candle -->
+  <rect x="48" y="10" width="4" height="18" fill="#FFD700" stroke="#1f6f50" stroke-width="1"/>
+  
+  <!-- Flame -->
+  <path d="M 50 8 Q 48 2 50 0 Q 52 2 50 8" fill="#FF6B35" stroke="#FF4500" stroke-width="0.5"/>
+  
+  <!-- Decorative dots -->
+  <circle cx="35" cy="55" r="2" fill="#1f6f50"/>
+  <circle cx="50" cy="58" r="2" fill="#1f6f50"/>
+  <circle cx="65" cy="55" r="2" fill="#1f6f50"/>
+</svg>

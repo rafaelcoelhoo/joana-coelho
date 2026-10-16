@@ -1,0 +1,57 @@
+{
+  "name": "Doce Fórmula - Bolos e Brigadeiros Artesanais",
+  "short_name": "Doce Fórmula",
+  "description": "Bolos de todo o tipo e brigadeiros gourmet feitos à mão por uma farmacêutica em Espinho.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1f6f50",
+  "background_color": "#fcf7f5",
+  "categories": ["food", "shopping"],
+  "screenshots": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Menu",
+      "short_name": "Menu",
+      "description": "Ver menu e preços",
+      "url": "/#menu",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Fazer Encomenda",
+      "short_name": "Encomendar",
+      "description": "Fazer uma encomenda",
+      "url": "/#encomendar",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
