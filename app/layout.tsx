@@ -4,6 +4,7 @@ import "./globals.css"
 
 const _dmSans = DM_Sans({ subsets: ["latin"] })
 const _fraunces = Fraunces({ subsets: ["latin"], axes: ["SOFT", "opsz"] })
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
 
 export const metadata: Metadata = {
   title: "Doce Fórmula · Bolos e brigadeiros artesanais em Espinho",
@@ -66,9 +67,9 @@ export default function RootLayout({
   return (
     <html lang="pt-PT" className="bg-background scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href={`${basePath}/favicon.svg`} type="image/svg+xml" />
+        <link rel="apple-touch-icon" href={`${basePath}/favicon.svg`} />
+        <link rel="manifest" href={`${basePath}/manifest.json`} />
         <meta name="theme-color" content="#1f6f50" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
